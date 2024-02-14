@@ -45,10 +45,10 @@
       for(int a=0;a<6;a++){
         long unsigned bright=fade[a]*fade[a];
         bright/=255;
-        strip.setPixelColor(a,bright,0,0);
+        EYE.setPixelColor(a,bright,0,0);
         fade[a]=max(0,fade[a]-4);;
       }
-      strip.show();
+      EYE.show();
     }
   //
     
